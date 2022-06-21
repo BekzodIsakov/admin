@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Loading component 1`] = `
+<DocumentFragment>
+  <div
+    class="loader"
+  >
+    <div
+      class="loader-logo"
+    >
+      <img
+        alt="Najot Ta'lim logotype"
+        src="/nt-logo.png"
+      />
+    </div>
+    <div
+      class="loader-content"
+    >
+      <div
+        class="loader-title"
+        data-testid="loader-title"
+      >
+        “Najot Ta’lim”ga xush kelibsiz. 
+        <br />
+        Sahifa yuklanyapti, uzoq kutib qolmaysiz.
+      </div>
+      <div
+        class="loader-description"
+      >
+        Kutganingiz uchun tashakkur!
+      </div>
+      <div
+        class="loader-spinner"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

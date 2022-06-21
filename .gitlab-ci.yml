@@ -1,0 +1,47 @@
+before_script:
+  - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+
+stages:
+  - build
+  - deploy
+
+build_image_dev:
+  stage: build
+  script:
+    - make build-image-dev TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=dev
+    - make push-image TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=dev
+  only:
+    - dev
+
+build_image_main:
+  stage: build
+  script:
+    - make build-image-prod TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY
+    - make push-image TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY
+  only:
+    - master
+
+deploy_image_dev:
+  stage: deploy
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$GITLAB_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script: 
+    - ssh -p $NT_UZ_DEV_SSH_PORT -o StrictHostKeyChecking=no $NT_UZ_DEV_USER@$NT_UZ_DEV_HOST 'docker service update --with-registry-auth --image '$CI_REGISTRY'/'$CI_PROJECT_NAMESPACE'/'$CI_PROJECT_NAME':'$CI_PIPELINE_IID' nt_user-frontend-new'
+  only:
+    - dev
+
+deploy_image_main:
+  stage: deploy
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$GITLAB_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script: 
+    - ssh -p $NT_UZ_SSH_PORT -o StrictHostKeyChecking=no $NT_UZ_USER@$NT_UZ_HOST 'docker service update --with-registry-auth --image '$CI_REGISTRY'/'$CI_PROJECT_NAMESPACE'/'$CI_PROJECT_NAME':'$CI_PIPELINE_IID' nt_user-frontend-new'
+  only:
+    - master
+

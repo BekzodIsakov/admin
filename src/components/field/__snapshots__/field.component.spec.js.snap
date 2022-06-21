@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms Field Should render Input component 1`] = `
+<DocumentFragment>
+  .c2 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 11px 16px 11px 16px;
+  background-color: #fff;
+  border: 2px solid #dadada;
+  border-radius: 100px;
+  font-family: 'Manrope',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.c2::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c0 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+
+.c1 {
+  position: absolute;
+  z-index: 99;
+  top: 13px;
+  left: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 99;
+  top: 13px;
+  right: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+    <input
+      class="c2"
+      data-testid="input"
+      name="test-input"
+      value=""
+    />
+    <span
+      class="c3"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Atoms Field Should render Select component 1`] = `
+<DocumentFragment>
+  .c3 {
+  padding: 14px 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #000000;
+  border-radius: 12px;
+}
+
+.c4 {
+  padding: 14px 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 1.1rem 1.6rem;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.2rem;
+  color: #222222;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 2px solid #dadada;
+  cursor: pointer;
+}
+
+.c1:after {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 10px;
+  background-image: url(arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: '';
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.c2 {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  z-index: 9;
+  display: none;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 18px 16px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="field-select"
+    >
+      Erkak
+    </div>
+    <div
+      class="c2"
+    >
+      <span
+        class="c3"
+        data-testid="field-select-option-male"
+      >
+        Erkak
+      </span>
+      <span
+        class="c4"
+        data-testid="field-select-option-female"
+      >
+        Ayol
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Atoms Field Should render Textarea component 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  border: 2px solid #dadada;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px 68px 16px 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.c1::-webkit-scrollbar {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.c1::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.c1:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.c1::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% / 2 - 24px);
+  bottom: calc(100% / 2 - 24px);
+  margin: auto;
+  right: 14px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+<div
+    class="c0"
+  >
+    <textarea
+      class="c1"
+      data-testid="textarea-field"
+      name="test-textarea"
+      rows="1"
+    />
+    <div
+      class="c2"
+    />
+  </div>
+</DocumentFragment>
+`;

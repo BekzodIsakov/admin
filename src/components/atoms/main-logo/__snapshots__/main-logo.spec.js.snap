@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms Context Should render MainLogo component 1`] = `
+<DocumentFragment>
+  .c0 a {
+  display: inline-block;
+}
+
+.c0 > img {
+  width: 100%;
+}
+
+@media only screen and (max-width:1024px) {
+  .c0 {
+    width: 5.1rem;
+  }
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;

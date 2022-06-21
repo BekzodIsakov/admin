@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms Context Should render HorizontalRule component 1`] = `
+<DocumentFragment>
+  .c0 {
+  height: 0.1rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  background-color: #dadada;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;

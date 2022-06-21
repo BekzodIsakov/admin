@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "checkJs": false,
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@test-utils/*": ["./src/test-utils/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@store/*": ["./src/store/*"],
+      "@config/*": ["./src/config/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@services/*": ["./src/services/*"],
+      "@components/*": ["./src/components/*"],
+      "@auth/*": ["./src/modules/auth/*"],
+      "@courses/*": ["./src/modules/courses/*"],
+      "@dashboard/*": ["./src/modules/dashboard/*"],
+      "@payments/*": ["./src/modules/payments/*"],
+      "@settings/*": ["./src/modules/settings/*"],
+      "@notifications/*": ["./src/modules/notifications/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

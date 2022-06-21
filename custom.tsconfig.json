@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "types",
+    "declarationMap": true,
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "paths": {
+    "@assets/*": ["./src/assets/*"],
+    "@hooks/*": ["./src/hooks/*"],
+    "@styles/*": ["./src/styles/*"],
+    "@store/*": ["./src/store/*"],
+    "@utils/*": ["./src/utils/*"],
+    "@services/*": ["./src/services/*"],
+    "@components/*": ["./src/components/*"],
+    "@auth/*": ["./src/modules/auth/*"],
+    "@courses/*": ["./src/modules/courses/*"],
+    "@dashboard/*": ["./src/modules/dashboard/*"],
+    "@payments/*": ["./src/modules/payments/*"],
+    "@settings/*": ["./src/modules/settings/*"],
+    "@notifications/*": ["./src/modules/notifications/*"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "build", "dist"]
+}

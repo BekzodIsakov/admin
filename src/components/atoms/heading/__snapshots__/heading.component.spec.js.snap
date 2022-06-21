@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Heading1 1`] = `[Function]`;
+
+exports[`Render Heading2 1`] = `[Function]`;
+
+exports[`Render Heading3 1`] = `[Function]`;
+
+exports[`Render Heading4 1`] = `[Function]`;
+
+exports[`Render Heading5 1`] = `[Function]`;
+
+exports[`Render Heading6 1`] = `[Function]`;

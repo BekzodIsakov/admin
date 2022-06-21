@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Common Context Should render LastNews component 1`] = `
+<DocumentFragment>
+  .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 215px;
+  padding: 24px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  background-color: #161009;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-image: linear-gradient( 0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url(https://via.placeholder.com/300x150);
+}
+
+.c0 {
+  background-color: #ffffff;
+}
+
+.c2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.c4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.c5 {
+  margin-left: 16px;
+}
+
+.c6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.c7 {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255,255,255,0.5);
+}
+
+<div
+    class="c0"
+    data-testid="last-news-component"
+  >
+    <a
+      class="c1"
+      href="https://landing.najottalim.uz/blog/ohirgi-yangilik"
+      target="_blank"
+    >
+      <h2
+        class="c2"
+        data-testid="last-news-title"
+      >
+        Ohirgi yangilik
+      </h2>
+      <div
+        class="c3"
+      >
+        <img
+          alt="Ohirgi yangilik"
+          class="c4"
+          height="40"
+          src="https://via.placeholder.com/40x40"
+          width="40"
+        />
+        <div
+          class="c5"
+        >
+          <h3
+            class="c6"
+            data-testid="last-news-author"
+          >
+            O'zbekiston Respublikasi
+          </h3>
+          <time
+            class="c7"
+            data-testid="last-news-day"
+          >
+            12/12/2020
+          </time>
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

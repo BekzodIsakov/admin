@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Active Banner Context Should render BlurredText component 1`] = `
+<DocumentFragment>
+  .c2 {
+  width: 2rem;
+  height: 2rem;
+  fill: #000000;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.c2[disabled] {
+  opacity: 0.2;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 1.2rem;
+  column-gap: 1.2rem;
+  border: none;
+  background-color: transparent;
+  padding: 0.2rem;
+  font-family: ManropeSemiBold;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.c1 > svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ba8d5b;
+  stroke: none;
+}
+
+.c1[disabled] {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0.6;
+}
+
+.c1[disabled] > svg {
+  opacity: 0.3;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.c0 span {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-style: italic;
+  -webkit-filter: blur(0.5rem);
+  filter: blur(0.5rem);
+}
+
+.c0 button {
+  position: absolute;
+  top: 100%;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.c0:hover button {
+  top: 0;
+}
+
+<div
+    class="c0"
+    data-testid="blurred-text-component"
+  >
+    <span />
+    <button
+      class="c1"
+      type="button"
+    >
+      <svg
+        class="c2"
+      >
+        <use
+          xlink:href="sprite.svg#eye-icon"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;

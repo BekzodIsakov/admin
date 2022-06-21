@@ -1,0 +1,16 @@
+{
+  "short_name": "NT Platforma",
+  "name": "Najot Ta'lim Platformasi",
+  "description": "Najot Ta'lim o'quv platformasi",
+  "icons": [
+    {
+      "src": "nt_logo.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ba8d5b",
+  "background_color": "#ffffff"
+}

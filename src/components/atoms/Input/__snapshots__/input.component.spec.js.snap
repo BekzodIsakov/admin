@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Input component 1`] = `
+<DocumentFragment>
+  .c2 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 11px 16px 11px 16px;
+  background-color: #fff;
+  border: 2px solid #dadada;
+  border-radius: 100px;
+  font-family: 'Manrope',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.c2::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c2::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.c0 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+
+.c1 {
+  position: absolute;
+  z-index: 99;
+  top: 13px;
+  left: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 99;
+  top: 13px;
+  right: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+    <input
+      class="c2"
+      data-testid="input"
+      name="test-input"
+      value=""
+    />
+    <span
+      class="c3"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,167 @@
+export const commonActions: import("@reduxjs/toolkit").CaseReducerActions<{
+    setLoading(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    setError(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    fetchLatestNews(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchLatestNewsFulfilled(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    fetchCategories(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchCategoriesFulfilled(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    fetchProfile(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchProfileFulfilled(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    removeProfile(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchRecommendedCourses(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchRecommendedCoursesFulfilled(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+    fetchPromoCourses(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>): void;
+    fetchPromoCoursesFulfilled(state: import("immer/dist/internal").WritableDraft<{
+        loading: boolean;
+        error: any;
+        categories: any[];
+        profile: any;
+        recommendedCourses: any[];
+        promoCourses: any;
+        courses: any[];
+        ready: boolean;
+    }>, action: {
+        payload: any;
+        type: string;
+    }): void;
+}>;
+export const commonReducer: import("redux").Reducer<{
+    loading: boolean;
+    error: any;
+    categories: any[];
+    profile: any;
+    recommendedCourses: any[];
+    promoCourses: any;
+    courses: any[];
+    ready: boolean;
+}, import("redux").AnyAction>;
+export const useCommonSelector: any;
+export function useProfileSelector(): any;
+export function useReadySelector(): any;
+//# sourceMappingURL=common.slice.d.ts.map
