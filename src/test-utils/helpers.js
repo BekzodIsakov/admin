@@ -16,9 +16,9 @@ const AllTheProviders = ({ children, formikValues = {} }) => {
       <ReduxProvider store={store}>
         <ThemeProvider theme={theme}>
           <Formik initialValues={formikValues}>
-            <VideoContext.Provider value={videoRef}>
-              {children}
-            </VideoContext.Provider>
+            {/* <VideoContext.Provider value={videoRef}> */}
+            {children}
+            {/* </VideoContext.Provider> */}
           </Formik>
         </ThemeProvider>
       </ReduxProvider>

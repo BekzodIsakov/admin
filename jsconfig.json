@@ -17,7 +17,6 @@
       "@services/*": ["./src/services/*"],
       "@components/*": ["./src/components/*"],
       "@auth/*": ["./src/modules/auth/*"],
-      "@courses/*": ["./src/modules/courses/*"],
       "@dashboard/*": ["./src/modules/dashboard/*"],
       "@payments/*": ["./src/modules/payments/*"],
       "@settings/*": ["./src/modules/settings/*"],

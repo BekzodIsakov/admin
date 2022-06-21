@@ -4,7 +4,7 @@ import reactDomServer from 'react-dom/server';
 import { coursesActions, useActiveLessonSelector } from '@courses/store';
 import { useDispatch } from 'react-redux';
 import { useContext } from 'react';
-import { VideoContext } from '@courses/routes/courses-single/course.context';
+// import { VideoContext } from '@courses/routes/courses-single/course.context';
 import { useUpdateVideo } from '@hooks/use-update-video';
 import { styleKeysToCamelCase } from '@utils/style-keys-to-camel-case';
 import uzLocaleJson from './localization.json';
@@ -46,7 +46,7 @@ export const useShakaPlayerProps = ({ src, watermark }) => {
   const [loadError, setLoadError] = useState(true);
   const [showPrevNext, setShowPrevNext] = useState(false);
   const activeLesson = useActiveLessonSelector();
-  const videoRef = useContext(VideoContext);
+  const videoRef = useContext();
   const { updateVideoTime } = useUpdateVideo(videoRef);
   const [intervalTime, setIntervalTime] = useState(1000);
   const [showWatermark, setShowWatermark] = useState(false);
