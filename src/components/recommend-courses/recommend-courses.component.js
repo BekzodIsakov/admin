@@ -12,50 +12,25 @@ import {
 
 import { RecommendCourseCard } from './recommend-course-card';
 
-const useRecommendCoursesProps = () => {
-  const dispatch = useDispatch();
+const useRecommendCoursesProps = () => {};
 
-  const recommendedCourses = useSelector(
-    state => state.common.recommendedCourses
+export const RecommendCourses = hoc(useRecommendCoursesProps, ({ ...rest }) => {
+  return (
+    <RecommendedCourse {...rest}>
+      <RecommendedCourseTitle>Sizga tavsiya qilamiz</RecommendedCourseTitle>
+      <RecommendCoursesWrapper>
+        <RecommendCourseHolder>
+          <RecommendCourseCards>
+            <RecommendCourseCard
+              key={1}
+              cardTitle={'card title'}
+              cardImg={''}
+              cardText={'card text'}
+              cardToLink={''}
+            />
+          </RecommendCourseCards>
+        </RecommendCourseHolder>
+      </RecommendCoursesWrapper>
+    </RecommendedCourse>
   );
-
-  useEffect(() => {
-    dispatch(commonActions.fetchRecommendedCourses());
-  }, [dispatch]);
-  // console.log(recommendedCourses, 'recomeneded nakrutka');
-  return {
-    recommendedCourses
-  };
-};
-
-export const RecommendCourses = hoc(
-  useRecommendCoursesProps,
-  ({ recommendedCourses, ...rest }) => {
-    return (
-      <RecommendedCourse {...rest}>
-        <RecommendedCourseTitle>Sizga tavsiya qilamiz</RecommendedCourseTitle>
-        <RecommendCoursesWrapper>
-          <RecommendCourseHolder>
-            <RecommendCourseCards>
-              {recommendedCourses && recommendedCourses.length > 0 ? (
-                recommendedCourses
-                  ?.slice(0, 3)
-                  ?.map((item, index) => (
-                    <RecommendCourseCard
-                      key={index}
-                      cardTitle={item?.title?.uz}
-                      cardImg={item.picture?.url}
-                      cardText={item.description?.uz}
-                      cardToLink={item.slug}
-                    />
-                  ))
-              ) : (
-                <h3>Hozircha hech qanday tavsiya qilinadigan kurslar yoq</h3>
-              )}
-            </RecommendCourseCards>
-          </RecommendCourseHolder>
-        </RecommendCoursesWrapper>
-      </RecommendedCourse>
-    );
-  }
-);
+});
