@@ -7,7 +7,7 @@ const useNotificationProps = () => {};
 
 export const Notification = hoc(useNotificationProps, () => {
   return (
-    <MainLayout rightSidebar={<LastNews />}>
+    <MainLayout rightSidebar={<div>Right sidebar</div>}>
       <NotificationsList />
     </MainLayout>
   );
