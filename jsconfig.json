@@ -18,7 +18,6 @@
       "@components/*": ["./src/components/*"],
       "@auth/*": ["./src/modules/auth/*"],
       "@dashboard/*": ["./src/modules/dashboard/*"],
-      "@payments/*": ["./src/modules/payments/*"],
       "@settings/*": ["./src/modules/settings/*"],
       "@notifications/*": ["./src/modules/notifications/*"]
     }
