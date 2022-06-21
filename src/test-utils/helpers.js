@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '@styles/Theme';
 import { store } from '@store';
 import { Formik } from 'formik';
-import { VideoContext } from '@courses/routes/courses-single/course.context';
+// import { VideoContext } from '@courses/routes/courses-single/course.context';
 import { createMemoryHistory } from 'history';
 
 const AllTheProviders = ({ children, formikValues = {} }) => {
