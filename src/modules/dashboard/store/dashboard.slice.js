@@ -4,10 +4,7 @@ const name = 'dashboard';
 
 const initialState = {
   loading: false,
-  error: null,
-  taskStatistics: [],
-  lastWatchVideo: {},
-  certificates: []
+  error: null
 };
 
 export const { actions: dashboardActions, reducer: dashboardReducer } =
@@ -20,27 +17,6 @@ export const { actions: dashboardActions, reducer: dashboardReducer } =
       },
       setError(state, action) {
         state.error = action.payload;
-      },
-      downloadCertificate(state) {
-        state.loading = true;
-      },
-      fetchTaskStatistics(state) {
-        state.loading = true;
-      },
-      fetchLastWatchVideo(state) {
-        state.loading = true;
-      },
-      fetchCertificates(state) {
-        state.loading = true;
-      },
-      fetchTaskStatisticsFulfilled(state, action) {
-        state.taskStatistics = action.payload;
-      },
-      fetchLastWatchVideoFulfilled(state, action) {
-        state.lastWatchVideo = action.payload;
-      },
-      fetchCertificatesFulfilled(state, action) {
-        state.certificates = action.payload;
       }
     }
   });
