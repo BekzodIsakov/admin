@@ -6,6 +6,8 @@
 .pnp.js
 build
 
+/src/config
+
 # testing
 /coverage
 
